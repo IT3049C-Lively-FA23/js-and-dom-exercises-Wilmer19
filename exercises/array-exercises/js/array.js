@@ -71,6 +71,6 @@ class ArrayFunctions {
    */
   square(arr) {
     // hint: use .map
-    return ;
+    return arr.map(num => num * num);
   }
 }
