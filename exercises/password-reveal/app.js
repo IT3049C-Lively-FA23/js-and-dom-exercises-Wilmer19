@@ -7,7 +7,13 @@ revealButton.addEventListener('click',function(){
 	passwordInput.type = 'text';
 });
 // 🤖: The event listener should toggle the password field attribute between `password` and `text` to change the visibility of the password field content.
-
+revealButton.addEventListener('click', function(){
+	if(passwordInput.type === 'password'){
+		passwordInput.type = 'text';
+	} else{
+		passwordInput.type = 'password';
+	}
+});
 
 // Provided for you - prevent form submit
 const form = document.querySelector("form");
