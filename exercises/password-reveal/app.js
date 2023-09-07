@@ -3,7 +3,9 @@ const passwordInput = document.querySelector("password");
 const revealButton = document.querySelector("submit")
 
 // 🤖: Create an Event Listener on the password reveal button
-
+revealButton.addEventListener('click',function(){
+	passwordInput.type = 'text';
+});
 // 🤖: The event listener should toggle the password field attribute between `password` and `text` to change the visibility of the password field content.
 
 
