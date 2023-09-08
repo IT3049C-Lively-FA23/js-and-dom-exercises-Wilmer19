@@ -3,7 +3,7 @@
     {
       "name": "Unit Tests",
       "setup": "npm install",
-      "run": "npm test:unit",
+      "run": "npm run test:unit",
       "input": "",
       "output": "",
       "comparison": "included",
