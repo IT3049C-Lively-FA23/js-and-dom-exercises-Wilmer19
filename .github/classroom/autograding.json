@@ -13,7 +13,7 @@
     {
       "name": "Integration Tests",
       "setup": "npm install",
-      "run": "npm test:integration",
+      "run": "npm run test:integration",
       "input": "",
       "output": "",
       "comparison": "included",
