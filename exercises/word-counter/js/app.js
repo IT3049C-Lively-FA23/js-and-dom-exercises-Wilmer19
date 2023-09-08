@@ -1,4 +1,6 @@
 // 🤖: create 2 constants with references to textarea input and the stats section from the DOM
+const textArea = document.querySelector("textarea");
+const stats = document.getElementsById("stat");
 
 
 // 🤖: Create an Event Listener on textarea input
