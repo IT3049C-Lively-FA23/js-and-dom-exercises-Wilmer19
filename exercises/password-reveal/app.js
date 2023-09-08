@@ -1,19 +1,21 @@
 // 🤖: create 2 constants with references to the password input and the reveal button from the DOM
-const passwordInput = document.querySelector("password");
-const revealButton = document.querySelector("submit")
+
+const passwordInput = document.getElementById("password");
+const revealButton = document.getElementById("togglePassword");
 
 // 🤖: Create an Event Listener on the password reveal button
-revealButton.addEventListener('click',function(){
-	passwordInput.type = 'text';
-});
 // 🤖: The event listener should toggle the password field attribute between `password` and `text` to change the visibility of the password field content.
-revealButton.addEventListener('click', function(){
-	if(passwordInput.type === 'password'){
-		passwordInput.type = 'text';
-	} else{
-		passwordInput.type = 'password';
-	}
+
+revealButton.addEventListener("click", function(e){
+
+if (passwordInput.type === "text") {
+	passwordInput.type = "password";
+} else {
+	passwordInput.type = "text";
+}
 });
+
+
 
 // Provided for you - prevent form submit
 const form = document.querySelector("form");
